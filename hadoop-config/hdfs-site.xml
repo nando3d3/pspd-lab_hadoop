@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+<property>
+<name>dfs.namenode.name.dir</name><value>/usr/local/hadoop/data/nameNode</value>
+</property>
+<property>
+<name>dfs.datanode.data.dir</name><value>/usr/local/hadoop/data/dataNode</value>
+</property>
+<property>
+<name>dfs.replication</name>
+<value>3</value>
+</property>
+
+<!-- Tamanho do bloco padrão para arquivos no HDFS --> 
+	<property> 
+		<name>dfs.blocksize</name> 
+		<value>134217728</value> <!-- 128 MB de tamanho do bloco --> 
+	</property> 
+
+</configuration>
